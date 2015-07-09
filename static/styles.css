@@ -1,0 +1,150 @@
+body {
+	font-family: sans-serif;
+	background-color: gray;
+	margin: 0px 0px 0px 0px;
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	float:left;
+}
+p {
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 8px;
+	margin-top: 0px;
+}
+.header {
+	width:100%;
+	/*float:left;*/
+	background-color: black;
+    color:white;
+	margin-bottom: 10px;
+	display: flex;
+	display: -webkit-flex;
+    
+}
+.title {
+	padding-left: 150px;
+	/*float:left;*/
+	width: 100%;
+	/*margin-left: 8px;
+	overflow: visible;*/
+    color: white;
+}
+.login {
+	position: absolute;
+	right: 0;
+	button: 0;
+	display: -webkit-flex;
+	display: flex;
+}
+p.username {
+	text-align:right;
+	padding-top: 10px;
+	padding-right: 2px;
+}
+.main,.item {
+	background-color: white;
+	clear:both;
+	color: black;
+	overflow: auto;*/
+	max-width: 500;
+	min-width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 70px;
+	border: 2px solid;
+	padding: 8px 8px 8px 8px;
+}
+.main {
+	display: -webkit-flex;
+	display: flex;
+    max-width: 1000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 8px 8px 8px;
+}
+.footer {
+	color: black;
+	/*background-color: #333333;*/
+	/*overflow: auto;*/
+	margin-top: 8px;
+	padding: 0px 0px 0px 0px;
+	position:fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	color: #CCCCCC;
+	/*text-align: right;*/
+	display: -webkit-flex;
+	display: flex;
+}
+.api {
+	/*width: 200px;*/
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.categories {
+	/*float: left;*/
+	width: 40%;
+}
+.items {
+	/*float: right;*/
+    margin-left: 10px;
+	width: 40%;
+}
+
+.verticalLine {
+    border-left: solid black;
+}
+.flash {
+	/*clear:both;*/
+	/*overflow: auto;*/
+	max-width: 520px;
+	min-width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	border: 2px solid;
+	border-radius: 5px;
+	color: white;
+	background-color: red;
+}
+/* links */
+a:link,a:visited,a:active {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+/* form */
+button,input,select,textarea {
+	-moz-border-radius:3px; 
+	-webkit-border-radius: 3px; 
+	-khtml-border-radius: 3px;
+	-webkit-appearance: none;
+	font-size: inherit;
+	color: black;
+	border: 1px solid black;
+}
+textarea { 
+	resize:vertical; 
+}
+input,select,textarea {
+	width: 100%;
+	background: #EEEEEE;
+	text-indent: 5px;
+}
+button {
+	background: red;
+    
+	float: left;
+    margin-right: 20px;
+}

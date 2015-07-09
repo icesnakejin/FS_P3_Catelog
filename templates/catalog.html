@@ -1,0 +1,42 @@
+{% include 'header.html' %}
+	<div class="main">
+		<div class="categories">
+			<h2>Categories</h2>
+            <l style="list-style-type:none">
+				<li><a href="{{url_for('showCatalog')}}">All</a>
+				</li>
+				{% for category in categories %}
+				<li><a href="{{url_for('showCategory', category_name = category.name)}}">{{category.name}}</a>
+				</li>
+				{% endfor %}
+			</l>
+		</div>
+        <div class="verticalLine">
+                
+        </div>
+		{% if category %}
+		<div class="items">
+			<h2>{{category.name}}</h2>
+			<l style="list-style-type:none">
+				{% if user %}
+				<li><a href="{{url_for('addItem',category_name=category.name)}}">Add Item</a>
+				</li>
+				{% endif %} {% for item in items %}
+				<li><a href="{{url_for('showItem', item_id = item.id)}}">{{item.name}}</a>
+				</li>
+				{% endfor %}
+			</l style="list-style-type:none">
+		</div>
+		{% else %}
+		<div class="items">
+			<h2>Latest Items</h2>
+			<l style="list-style-type:none">
+				{% for item in items %}
+				<li><a href="{{url_for('showItem', item_id = item.id)}}">{{item.name}} ({{item.category.name}})</a>
+				</li>
+				{% endfor %}
+			</l>
+		</div>
+		{% endif %}
+	</div>
+{% include 'footer.html' %}
